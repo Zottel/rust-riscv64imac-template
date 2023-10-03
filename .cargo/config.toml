@@ -1,0 +1,9 @@
+#rustc-link-arg="--script=linker.ld"
+[target.riscv64imac-unknown-none-elf]
+rustflags = [
+  "-C", "link-arg=--script=linker.ld"
+]
+
+[build]
+target = "riscv64imac-unknown-none-elf"
+
